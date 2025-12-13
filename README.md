@@ -9,20 +9,20 @@ Fine-Tuned-Models
 
 data
 |
-|-- blooms_taxonomy_dataset.csv #
+|-- blooms_taxonomy_dataset.csv # Dataset of questions labeled with Bloom levels
 
 fine_tuning
 |
-|-- data_processing.py #
-|-- testing_metrics.py #
-|-- training.py #
+|-- data_processing.py # Loads, and prepares the dataset
+|-- testing_metrics.py # Evaluates the models performance and shows metrics
+|-- training.py # Fine-tunes the two models
 
 flaskApp
 |
-|-- static/css/main.css #
+|-- static/css/main.css # Styling for the web interace
 |-- templates 
-    |-- base.html #
-    |-- index.html #
-|-- app.py #
-|-- predict2.py #
+    |-- base.html # HTML layout
+    |-- index.html # User interface for predictions
+|-- app.py # Flask backend 
+|-- predict2.py # Loads trained model and generates predictions
 ```
